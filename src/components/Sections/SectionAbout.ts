@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const SectionProfile = styled.section`
+const SectionAbout = styled.section`
   > div {
     display: flex;
     flex-direction: column;
@@ -8,9 +8,9 @@ const SectionProfile = styled.section`
     align-items: center;
     gap: 10px;
     height: 100vh;
-    background-color: var(--color-primary-100);
-    box-shadow: 0px 0px 20px 0px inset #9f9f9f5e;
+    background-color: var(--color-gray-700);
+    padding-top: 20px;
   }
 `;
 
-export default SectionProfile;
+export default SectionAbout;

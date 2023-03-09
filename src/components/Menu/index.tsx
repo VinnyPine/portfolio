@@ -1,9 +1,13 @@
-import StyledMenu from "./style";
+import StyledMenu, { StyledButton } from "./style";
 
 const Menu = () => {
-  return <StyledMenu>
-    
-  </StyledMenu>
-}
+  return (
+    <StyledMenu>
+      <StyledButton variant="contained">Sobre mim</StyledButton>
+      <StyledButton variant="contained">Skills</StyledButton>
+      <StyledButton variant="contained">Projetos</StyledButton>
+    </StyledMenu>
+  );
+};
 
 export default Menu;

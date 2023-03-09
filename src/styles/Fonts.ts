@@ -22,6 +22,10 @@ const Fonts = createGlobalStyle`
     color: var(--color-gray-100);
   }
 
+  .gray-700 {
+    color: var(--color-gray-700);
+  }
+
 `;
 
 export default Fonts;
