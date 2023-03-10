@@ -8,14 +8,23 @@ const Fonts = createGlobalStyle`
     font-size: 18px;
     font-weight: bold;
     text-align: center;
-
   }
 
   .text-profile {
     font-size: 15px;
     font-weight: regular;
     text-align: center;
+  }
 
+  .title-section {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .title-skills {
+    font-size: 18px;
+    font-weight: bold;
   }
 
   .gray-100 {
