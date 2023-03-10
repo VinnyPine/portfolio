@@ -9,7 +9,13 @@ const GlobalStyles = createGlobalStyle`
 
   :root {
     --color-primary-100: #6f338f;
-    --color-gray-100: #E1E1E1;
+    --color-gray-100: #333333;
+    --color-gray-200: #5d5d5d;
+    --color-gray-300: #727272;
+    --color-gray-400: #919191;
+    --color-gray-500: #E1E1E1;
+    --color-gray-600: #E1E1E1;
+    --color-gray-700: #E1E1E1;
   }
 
   body {

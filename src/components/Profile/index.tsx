@@ -13,8 +13,8 @@ const Profile = ({ name, role }: iProps) => {
         <img src={profileImage} alt="imagem de perfil" />
       </div>
       <div className="textCase">
-        <h1 className="title-profile gray-100">{name}</h1>
-        <h3 className="text-profile gray-100">{role}</h3>
+        <h1 className="title-profile gray-700">{name}</h1>
+        <h3 className="text-profile gray-700">{role}</h3>
       </div>
     </StyledProfile>
   );
