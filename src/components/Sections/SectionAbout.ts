@@ -7,9 +7,10 @@ const SectionAbout = styled.section`
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    height: 100vh;
+    min-height: 70vh;
     background-color: var(--color-gray-700);
     padding-top: 20px;
+    padding-bottom: 20px;
   }
 `;
 

@@ -6,6 +6,14 @@ const Container = styled.div`
   padding-right: 16px;
   padding-left: 16px;
   max-width: 600px;
+
+  @media (min-width: 600px) {
+    width: 95%;
+    max-width: 1200px;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
 `;
 
 export default Container;

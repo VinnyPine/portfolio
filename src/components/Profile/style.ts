@@ -33,6 +33,13 @@ const StyledProfile = styled.div`
       margin-top: 10px;
     }
   }
+
+  @media (min-width: 600px) {
+    .imageCase {
+      width: 250px;
+      height: 250px;
+    }
+  }
 `;
 
 export default StyledProfile;

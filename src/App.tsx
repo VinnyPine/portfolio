@@ -7,16 +7,16 @@ import SectionAbout from "./components/Sections/SectionAbout";
 import MenuSocial from "./components/MenuSocial";
 import SectionSkills from "./components/Sections/SectionSkills";
 import SkillsCase from "./components/SkillsCase";
+import SectionProjects from "./components/Sections/SectionProjects";
+import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <SectionProfile>
         <Container>
-          <Profile
-            name="Vinicius Pinheiro da Silva"
-            role="Desenvolvedor Web Front End"
-          />
+          <Profile role="Desenvolvedor Web Front End" />
           <Menu />
         </Container>
       </SectionProfile>
@@ -42,6 +42,13 @@ function App() {
           />
         </Container>
       </SectionSkills>
+      <SectionProjects>
+        <Container>
+          <h2 className="title-section">Projetos</h2>
+          <Projects />
+        </Container>
+      </SectionProjects>
+      <Footer />
     </div>
   );
 }

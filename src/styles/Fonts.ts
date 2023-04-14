@@ -5,7 +5,7 @@ const Fonts = createGlobalStyle`
 
 
   .title-profile {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
   }
@@ -27,6 +27,43 @@ const Fonts = createGlobalStyle`
     font-weight: bold;
   }
 
+  .title-repos {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .text-repos {
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  @media (min-width: 600px) {
+    .title-profile {
+      font-size: 30px;
+    }
+
+    .text-profile {
+      font-size: 18px;
+    }
+
+    .title-section {
+      font-size: 25px;
+    }
+
+    .title-skills {
+      font-size: 18px;
+    }
+
+    .title-repos {
+      font-size: 20px;
+    }
+
+    .text-repos {
+      font-size: 15px;
+    }
+
+  }
+  
   .gray-100 {
     color: var(--color-gray-100);
   }
