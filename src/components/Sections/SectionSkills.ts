@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const SectionSkills = styled.section`
+  background-color: var(--color-primary-100);
+
   > div {
     display: flex;
     flex-direction: column;
@@ -9,7 +11,6 @@ const SectionSkills = styled.section`
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 40px;
-    background-color: var(--color-primary-100);
   }
 `;
 

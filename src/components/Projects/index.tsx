@@ -3,15 +3,16 @@ import api from "../../services/api";
 import StyledProjects from "./style";
 import BurguerKenzieImg from "../../assets/BurguerKenzie.png";
 
-const repo = ["kenziehub-api", "abc"] as const;
+const repo = ["kenziehub-api", "abc", "cbd"] as const;
 
-type iRepo = typeof repo[number];
+type iRepo = (typeof repo)[number];
 
 type iRepoImages = Record<iRepo, string>;
 
 const repoImages: iRepoImages = {
   "kenziehub-api": BurguerKenzieImg,
   abc: BurguerKenzieImg,
+  cbd: BurguerKenzieImg,
 };
 
 interface iRepoData {

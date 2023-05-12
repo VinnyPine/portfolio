@@ -34,11 +34,12 @@ const StyledProfile = styled.div`
     }
   }
 
-  @media (min-width: 600px) {
-    .imageCase {
-      width: 250px;
-      height: 250px;
-    }
+  @media (min-width: 900px) {
+    scale: 1.2;
+  }
+
+  @media (min-width: 2000px) {
+    scale: 2;
   }
 `;
 

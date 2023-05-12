@@ -8,18 +8,22 @@ const StyledMenu = styled.div`
   gap: 15px;
   width: 90%;
   height: 30%;
-  margin-top: auto;
+  /* margin-top: auto; */
 
   @media (min-width: 600px) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    margin-top: auto;
+    /* margin-top: auto; */
   }
 
   @media (min-width: 700px) {
     gap: 50px;
+  }
+
+  @media (min-width: 1800px) {
+    scale: 1.8;
   }
 `;
 

@@ -14,17 +14,17 @@ import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
 
 const icons = {
-  JavaScript: <IoLogoJavascript color="var(--color-gray-500)" size="20px" />,
-  HTML5: <AiFillHtml5 color="var(--color-gray-500)" size="20px" />,
-  CSS3: <SiCss3 color="var(--color-gray-500)" size="20px" />,
-  ReactJs: <GrReactjs color="var(--color-gray-500)" size="20px" />,
-  TypeScript: <SiTypescript color="var(--color-gray-500)" size="20px" />,
-  Figma: <SiFigma color="var(--color-gray-500)" size="20px" />,
-  "Adobe Xd": <SiAdobexd color="var(--color-gray-500)" size="20px" />,
-  NodeJs: <FaNodeJs color="var(--color-gray-500)" size="20px" />,
-  "Material UI": <SiMui color="var(--color-gray-500)" size="20px" />,
+  JavaScript: <IoLogoJavascript color="var(--color-gray-500)" size="1.5em" />,
+  HTML5: <AiFillHtml5 color="var(--color-gray-500)" size="1.5em" />,
+  CSS3: <SiCss3 color="var(--color-gray-500)" size="1.5em" />,
+  ReactJs: <GrReactjs color="var(--color-gray-500)" size="1.5em" />,
+  TypeScript: <SiTypescript color="var(--color-gray-500)" size="1.5em" />,
+  Figma: <SiFigma color="var(--color-gray-500)" size="1.5em" />,
+  "Adobe Xd": <SiAdobexd color="var(--color-gray-500)" size="1.5em" />,
+  NodeJs: <FaNodeJs color="var(--color-gray-500)" size="1.5em" />,
+  "Material UI": <SiMui color="var(--color-gray-500)" size="1.5em" />,
   default: (
-    <MdIndeterminateCheckBox color="var(--color-gray-500)" size="20px" />
+    <MdIndeterminateCheckBox color="var(--color-gray-500)" size="1.5em" />
   ),
 };
 
@@ -62,7 +62,7 @@ const SkillsCase = ({ advanced, intermediary, basic }: iSkillCaseProps) => {
                 key={index}
                 label={tech}
                 variant="outlined"
-                sx={{ "&&": { fontSize: "15px" } }}
+                sx={{ "&&": { fontSize: "var(--font-size-skills)" } }}
                 icon={icons[tech]}
               />
             ))}
@@ -82,7 +82,7 @@ const SkillsCase = ({ advanced, intermediary, basic }: iSkillCaseProps) => {
                 key={index}
                 label={tech}
                 variant="outlined"
-                sx={{ "&&": { fontSize: "15px" } }}
+                sx={{ "&&": { fontSize: "var(--font-size-skills)" } }}
                 icon={icons[tech]}
               />
             ))}
@@ -102,7 +102,7 @@ const SkillsCase = ({ advanced, intermediary, basic }: iSkillCaseProps) => {
                 key={index}
                 label={tech}
                 variant="outlined"
-                sx={{ "&&": { fontSize: "15px" } }}
+                sx={{ "&&": { fontSize: "var(--font-size-skills)" } }}
                 icon={icons[tech]}
               />
             ))}

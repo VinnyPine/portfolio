@@ -8,6 +8,7 @@ const StyledFooter = styled.footer`
   justify-content: center;
   gap: 15px;
   height: 80px;
+  background-color: var(--color-primary-100);
 `;
 
 export default StyledFooter;

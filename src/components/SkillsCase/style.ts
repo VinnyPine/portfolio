@@ -18,6 +18,16 @@ const StyledSkillsCase = styled.div`
       margin-bottom: 10px;
     }
   }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    > div {
+      width: 25%;
+    }
+  }
 `;
 
 export const StyledChip = styledMui(Chip)({
@@ -27,6 +37,7 @@ export const StyledChip = styledMui(Chip)({
   "&:hover": {
     borderColor: "var(--color-gray-500)",
   },
+  padding: "1em 0.4em",
 });
 
 export default StyledSkillsCase;

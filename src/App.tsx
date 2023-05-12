@@ -22,12 +22,25 @@ function App() {
       </SectionProfile>
       <SectionAbout>
         <Container>
-          <h2>Sobre mim</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente
-            ut natus quia tenetur voluptatibus, nihil libero repellat. Omnis
-            tenetur repudiandae voluptas quisquam accusantium cumque hic
-            perspiciatis autem, dolore sed vitae!
+          <h2 className="title-section">Sobre mim</h2>
+          <p className="text-section">
+            Olá, eu sou um entusiasta de tecnologia, música, games e histórias.
+            Acredito que a imaginação é uma fonte inesgotável de criatividade e
+            inovação, e quero compartilhar essa visão com o mundo.
+          </p>
+          <p className="text-section">
+            Tenho habilidades em desenvolvimento web, usando HTML5 semântico,
+            CSS3 responsivo, Javascript(ES6), Typescript, Nodejs e bibliotecas
+            como React, Styled Components, router dom, Hook Form, yup, zod,
+            express e typeORM. Também domino outras linguagens como python e
+            php, e sei usar git para controle de versão. Além disso, tenho
+            experiência com metodologias ágeis como scrum e kanban, e um nível
+            intermediário de inglês.
+          </p>
+          <p className="text-section">
+            Sou um profissional dedicado, proativo e sempre disposto a aprender
+            novas tecnologias e ferramentas. Busco oportunidades de trabalho que
+            me desafiem e me permitam crescer como desenvolvedor e como pessoa.
           </p>
           <MenuSocial />
         </Container>
