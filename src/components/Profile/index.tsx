@@ -1,19 +1,21 @@
-import profileImage from "../../assets/profileImage.jpg";
+import { ApiContext } from "../../contexts/ApiContext";
 import StyledProfile from "./style";
+import { useContext } from "react";
 
 interface iProps {
-  name: string;
   role: string;
 }
 
-const Profile = ({ name, role }: iProps) => {
+const Profile = ({ role }: iProps) => {
+  const { user } = useContext(ApiContext);
+
   return (
-    <StyledProfile>
+    <StyledProfile id="Profile">
       <div className="imageCase">
-        <img src={profileImage} alt="imagem de perfil" />
+        <img src={user?.avatar_url} alt="imagem de perfil" />
       </div>
       <div className="textCase">
-        <h1 className="title-profile gray-700">{name}</h1>
+        <h1 className="title-profile gray-700">{user?.name}</h1>
         <h3 className="text-profile gray-700">{role}</h3>
       </div>
     </StyledProfile>

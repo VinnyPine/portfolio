@@ -10,6 +10,28 @@ const StyledSocialMenu = styled.div`
   align-items: center;
   margin-top: auto;
   height: 20%;
+
+  button > svg {
+    font-size: 28px;
+  }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 500px;
+
+    div > button > svg {
+      font-size: 32px;
+    }
+
+    button {
+      font-size: 16px;
+
+      > span > svg {
+        font-size: 40px !important;
+      }
+    }
+  }
 `;
 
 export const StyledButton = styledMui(Button)<ButtonProps>({

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-const SectionSkills = styled.section`
-  background-color: var(--color-primary-100);
+const SectionProjects = styled.section`
+  background-color: var(--color-gray-700);
 
   > div {
     display: flex;
@@ -9,9 +9,8 @@ const SectionSkills = styled.section`
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding-top: 10px;
-    padding-bottom: 40px;
+    padding-top: 15px;
   }
 `;
 
-export default SectionSkills;
+export default SectionProjects;

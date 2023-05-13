@@ -11,10 +11,10 @@ const MenuSocial = () => {
         <StyledIconButton aria-label="linkedin">
           <LinkedInIcon />
         </StyledIconButton>
-        <StyledIconButton aria-label="linkedin">
+        <StyledIconButton aria-label="email">
           <EmailOutlinedIcon />
         </StyledIconButton>
-        <StyledIconButton aria-label="linkedin">
+        <StyledIconButton aria-label="whatsapp">
           <WhatsAppIcon />
         </StyledIconButton>
       </div>

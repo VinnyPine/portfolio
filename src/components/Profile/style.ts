@@ -33,6 +33,14 @@ const StyledProfile = styled.div`
       margin-top: 10px;
     }
   }
+
+  @media (min-width: 900px) {
+    scale: 1.2;
+  }
+
+  @media (min-width: 2000px) {
+    scale: 2;
+  }
 `;
 
 export default StyledProfile;
