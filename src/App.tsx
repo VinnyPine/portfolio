@@ -10,6 +10,7 @@ import SkillsCase from "./components/SkillsCase";
 import SectionProjects from "./components/Sections/SectionProjects";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { useEffect, useState } from "react";
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
           <Menu />
         </Container>
       </SectionProfile>
-      <SectionAbout>
+      <SectionAbout id="About">
         <Container>
           <h2 className="title-section">Sobre mim</h2>
           <p className="text-section">
@@ -45,7 +46,7 @@ function App() {
           <MenuSocial />
         </Container>
       </SectionAbout>
-      <SectionSkills>
+      <SectionSkills id="Skills">
         <Container>
           <h2 className="title-section gray-700">Skills</h2>
           <SkillsCase
@@ -55,7 +56,7 @@ function App() {
           />
         </Container>
       </SectionSkills>
-      <SectionProjects>
+      <SectionProjects id="Projects">
         <Container>
           <h2 className="title-section">Projetos</h2>
           <Projects />

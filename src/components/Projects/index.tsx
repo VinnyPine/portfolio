@@ -1,51 +1,17 @@
-import { useEffect, useState } from "react";
-import api from "../../services/api";
+import { ApiContext } from "../../contexts/ApiContext";
 import StyledProjects from "./style";
-import BurguerKenzieImg from "../../assets/BurguerKenzie.png";
-
-const repo = ["kenziehub-api", "abc", "cbd"] as const;
-
-type iRepo = (typeof repo)[number];
-
-type iRepoImages = Record<iRepo, string>;
-
-const repoImages: iRepoImages = {
-  "kenziehub-api": BurguerKenzieImg,
-  abc: BurguerKenzieImg,
-  cbd: BurguerKenzieImg,
-};
-
-interface iRepoData {
-  name: string;
-  description: string;
-}
+import { useContext } from "react";
 
 const Projects = () => {
-  const [repos, setRepos] = useState<Array<iRepoData>>([]);
-
-  const requestApi = async () => {
-    const response = await api.get("/users/VinnyPine/repos");
-
-    setRepos(response.data);
-  };
-
-  const getRepoDescription = (repoName: iRepo) => {
-    const repoData = repos.find((repo) => repo.name === repoName);
-
-    return repoData?.description || "";
-  };
-
-  useEffect(() => {
-    requestApi();
-  }, []);
+  const { repos } = useContext(ApiContext);
 
   return (
     <StyledProjects>
-      {repo.map((name, index) => (
+      {repos.map((repo, index) => (
         <div key={index}>
-          <h3 className="title-repos">{name}</h3>
-          <img src={repoImages[name]} alt="screenshot of site" />
-          <p className="text-repos">{getRepoDescription(name)}</p>
+          <h3 className="title-repos">{repo.name}</h3>
+          <img src={repo.image} alt="screenshot of site" />
+          <p className="text-repos">{repo.description}</p>
         </div>
       ))}
     </StyledProjects>

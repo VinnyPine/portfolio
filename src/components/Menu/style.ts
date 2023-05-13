@@ -8,14 +8,12 @@ const StyledMenu = styled.div`
   gap: 15px;
   width: 90%;
   height: 30%;
-  /* margin-top: auto; */
 
   @media (min-width: 600px) {
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 30px;
-    /* margin-top: auto; */
   }
 
   @media (min-width: 700px) {
@@ -35,6 +33,9 @@ export const StyledButton = styledMui(Button)<ButtonProps>({
   },
   "@media (min-width: 700px)": {
     width: "150px",
+  },
+  ":hover": {
+    backgroundColor: "#b4b4b436",
   },
 });
 
