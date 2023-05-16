@@ -1,7 +1,7 @@
 import { createContext } from "react";
 import { useState, useEffect } from "react";
 import api from "../services/api";
-import BurguerKenzieImg from "../assets/BurguerKenzie.png";
+import projectsData from "../utils/projectsData";
 
 interface iApiValue {
   user: iUser | undefined;
@@ -16,19 +16,12 @@ interface iUser {
   avatar_url: string;
 }
 
-const repoNames = ["kenziehub-api"] as const;
-
-type iRepo = (typeof repoNames)[number];
-
-type iRepoImages = Record<iRepo, string>;
-
-const repoImages: iRepoImages = {
-  "kenziehub-api": BurguerKenzieImg,
-};
-
 interface iRepoData {
   name: string;
   description: string;
+  html_url: string;
+  homepage: string;
+  language: string;
 }
 
 interface iRepoCustom extends iRepoData {
@@ -53,21 +46,27 @@ const ApiProvider = ({ children }: iApiProps) => {
 
     const reposResponse: Array<iRepoData> = response.data;
 
-    const getRepoDescription = (name: iRepo) => {
-      const repoData = reposResponse.find((repo) => repo.name === name);
+    const repoData: Array<iRepoCustom> = [];
 
-      return repoData?.description || "";
-    };
+    projectsData.map((project) => {
+      const repoFinded: iRepoData | undefined = reposResponse.find(
+        (repo) => repo.name == project.name
+      );
 
-    const repoData: Array<iRepoCustom> = repoNames.map((name) => {
-      return {
-        name: name,
-        image: repoImages[name],
-        description: getRepoDescription(name),
-      };
+      if (repoFinded) {
+        repoData.push({
+          ...project,
+          description: repoFinded?.description,
+          language: repoFinded?.language,
+          html_url: repoFinded?.html_url,
+          homepage: repoFinded?.homepage,
+        });
+      }
     });
 
-    setRepos(repoData);
+    if (repoData.length > 0) {
+      setRepos(repoData);
+    }
   };
 
   const instantiateObserver = () => {

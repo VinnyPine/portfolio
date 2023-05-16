@@ -10,14 +10,13 @@ import SkillsCase from "./components/SkillsCase";
 import SectionProjects from "./components/Sections/SectionProjects";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import { useEffect, useState } from "react";
 
 function App() {
   return (
     <div className="App">
       <SectionProfile>
         <Container>
-          <Profile role="Desenvolvedor Web Front End" />
+          <Profile role="Desenvolvedor Web Full Stack" />
           <Menu />
         </Container>
       </SectionProfile>
@@ -49,11 +48,7 @@ function App() {
       <SectionSkills id="Skills">
         <Container>
           <h2 className="title-section gray-700">Skills</h2>
-          <SkillsCase
-            advanced={["ReactJs", "JavaScript", "HTML5", "CSS3"]}
-            intermediary={["Figma", "Adobe Xd"]}
-            basic={["Material UI", "NodeJs"]}
-          />
+          <SkillsCase />
         </Container>
       </SectionSkills>
       <SectionProjects id="Projects">
