@@ -15,6 +15,9 @@ import {
   SiPostgresql,
   SiSqlite,
   SiAxios,
+  SiGit,
+  SiGithub,
+  SiFramer,
 } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
 import { FaNodeJs } from "react-icons/fa";
@@ -63,6 +66,10 @@ export const stackData = [
     img: SiStyledcomponents,
   },
   {
+    title: "Framer Motion",
+    img: SiFramer,
+  },
+  {
     title: "NodeJs",
     img: FaNodeJs,
   },
@@ -85,6 +92,14 @@ export const stackData = [
   {
     title: "Sqlite",
     img: SiSqlite,
+  },
+  {
+    title: "Git",
+    img: SiGit,
+  },
+  {
+    title: "Github",
+    img: SiGithub,
   },
   {
     title: "Figma",

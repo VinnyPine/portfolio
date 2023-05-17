@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import Button, { ButtonProps } from "@mui/material/Button";
+import { styled as styledMui } from "@mui/material/styles";
 
 const StyledProjects = styled.div`
   max-width: 100%;
@@ -24,6 +26,13 @@ const StyledProjects = styled.div`
       object-fit: cover;
       object-position: center;
     }
+
+    > .buttonsCase {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5%;
+    }
   }
 
   @media (min-width: 450px) {
@@ -41,5 +50,10 @@ const StyledProjects = styled.div`
     }
   }
 `;
+
+export const StyledButton = styledMui(Button)<ButtonProps>({
+  border: "1px solid var(--color-gray-100)",
+  color: "var(--color-gray-100)",
+}) as typeof Button;
 
 export default StyledProjects;

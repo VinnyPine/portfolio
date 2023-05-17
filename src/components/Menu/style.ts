@@ -3,25 +3,28 @@ import styled from "styled-components";
 import { styled as styledMui } from "@mui/material/styles";
 
 const StyledMenu = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
   width: 90%;
-  height: 30%;
 
-  @media (min-width: 600px) {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-  }
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 30%;
 
-  @media (min-width: 700px) {
-    gap: 50px;
-  }
+    @media (min-width: 600px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
 
-  @media (min-width: 1800px) {
-    scale: 1.8;
+    @media (min-width: 700px) {
+      gap: 50px;
+    }
+
+    @media (min-width: 1800px) {
+      scale: 1.8;
+    }
   }
 `;
 

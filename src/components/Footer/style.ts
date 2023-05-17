@@ -13,13 +13,20 @@ const StyledFooter = styled.footer<iFooterProps>`
   gap: 15px;
   height: 80px;
   background-color: var(--color-primary-100);
+  position: relative;
 
-  > a.MuiButtonBase-root {
-    transition: opacity 2s;
+  .btBackToTop {
     position: fixed;
-    right: 15px;
     bottom: 25px;
-    ${({ showButton }) => (showButton ? null : "opacity: 0;")}
+    right: 25px;
+
+    > a > svg {
+      color: var(--color-black);
+    }
+
+    @media (min-width: 600px) {
+      scale: 2;
+    }
   }
 `;
 

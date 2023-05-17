@@ -4,6 +4,7 @@ Este é um portfólio para apresentar minhas habilidades e projetos.
 
 ## Pasta utils
 
+Você pode clonar o repositorio se quiser, e alterar os seus dados na pasta utils.
 Dentro dessa pasta, você precisará fazer o seguinte:
 
 - Em userData, coloque seu nome, usuário do GitHub, o final do link do seu LinkedIn e seu número de telefone com DDD.

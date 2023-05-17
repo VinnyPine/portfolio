@@ -1,17 +1,14 @@
-import BurguerKenzieImg from "../../src/assets/BurguerKenzie.png";
+import PortfolioImg from "../../src/assets/portfolioImg.png";
+import KimoveisImg from "../../src/assets/kimoveisImg.png";
 
 const projectsData = [
   {
-    name: "kenziehub-api",
-    image: BurguerKenzieImg,
-  },
-  {
     name: "portfolio",
-    image: BurguerKenzieImg,
+    image: PortfolioImg,
   },
   {
     name: "kimoveis",
-    image: BurguerKenzieImg,
+    image: KimoveisImg,
   },
 ];
 

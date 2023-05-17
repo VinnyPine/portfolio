@@ -1,6 +1,6 @@
+import styled from "styled-components";
 import Button, { ButtonProps } from "@mui/material/Button";
 import IconButton, { IconButtonProps } from "@mui/material/IconButton";
-import styled from "styled-components";
 import { styled as styledMui } from "@mui/material/styles";
 
 const StyledSocialMenu = styled.div`

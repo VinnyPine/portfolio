@@ -10,6 +10,8 @@ import SkillsCase from "./components/SkillsCase";
 import SectionProjects from "./components/Sections/SectionProjects";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import { motion } from "framer-motion";
+import { showCenterVariant, showRightVariant } from "./styles/motionVariants";
 
 function App() {
   return (
@@ -22,38 +24,85 @@ function App() {
       </SectionProfile>
       <SectionAbout id="About">
         <Container>
-          <h2 className="title-section">Sobre mim</h2>
-          <p className="text-section">
+          <motion.h2
+            className="title-section"
+            initial="deappear"
+            whileInView="appear"
+            variants={showCenterVariant}
+            viewport={{ once: true }}
+          >
+            Sobre mim
+          </motion.h2>
+          <motion.p
+            className="text-section"
+            initial="deappear"
+            whileInView="appear"
+            variants={showRightVariant}
+            viewport={{ once: true }}
+          >
             Olá, eu sou um entusiasta de tecnologia, música, games e histórias.
             Acredito que a imaginação é uma fonte inesgotável de criatividade e
             inovação, e quero compartilhar essa visão com o mundo.
-          </p>
-          <p className="text-section">
-            Tenho habilidades em desenvolvimento web, usando HTML5 semântico,
-            CSS3 responsivo, Javascript(ES6), Typescript, Nodejs e bibliotecas
-            como React, Styled Components, router dom, Hook Form, yup, zod,
-            express e typeORM. Também domino outras linguagens como python e
-            php, e sei usar git para controle de versão. Além disso, tenho
-            experiência com metodologias ágeis como scrum e kanban, e um nível
-            intermediário de inglês.
-          </p>
-          <p className="text-section">
+          </motion.p>
+          <motion.p
+            className="text-section"
+            initial="deappear"
+            whileInView="appear"
+            variants={showRightVariant}
+            viewport={{ once: true }}
+          >
+            Sou um desenvolvedor web com competências em criar páginas
+            semânticas e responsivas, aplicações de página única (SPA), e APIs
+            Rest usando Node JS e Python. Também tenho conhecimento de
+            metodologias ágeis como scrum e kanban, e um nível intermediário de
+            inglês.
+          </motion.p>
+          <motion.p
+            className="text-section"
+            initial="deappear"
+            whileInView="appear"
+            variants={showRightVariant}
+            viewport={{ once: true }}
+          >
             Sou um profissional dedicado, proativo e sempre disposto a aprender
             novas tecnologias e ferramentas. Busco oportunidades de trabalho que
             me desafiem e me permitam crescer como desenvolvedor e como pessoa.
-          </p>
-          <MenuSocial />
+          </motion.p>
+          <motion.div
+            initial="deappear"
+            whileInView="appear"
+            variants={showCenterVariant}
+            viewport={{ once: true }}
+          >
+            <MenuSocial />
+          </motion.div>
         </Container>
       </SectionAbout>
       <SectionSkills id="Skills">
         <Container>
-          <h2 className="title-section gray-700">Skills</h2>
+          <motion.h2
+            className="title-section gray-700"
+            initial="deappear"
+            whileInView="appear"
+            variants={showCenterVariant}
+            viewport={{ once: true }}
+          >
+            Skills
+          </motion.h2>
           <SkillsCase />
         </Container>
       </SectionSkills>
       <SectionProjects id="Projects">
         <Container>
-          <h2 className="title-section">Projetos</h2>
+          <motion.h2
+            className="title-section"
+            initial="deappear"
+            whileInView="appear"
+            variants={showCenterVariant}
+            viewport={{ once: true }}
+          >
+            Projetos
+          </motion.h2>
           <Projects />
         </Container>
       </SectionProjects>
