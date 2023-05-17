@@ -20,13 +20,7 @@ const StyledSkillsCase = styled.div`
   }
 
   @media (min-width: 600px) {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-
-    > div {
-      width: 25%;
-    }
+    gap: 50px;
   }
 `;
 
