@@ -4,6 +4,7 @@ import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
 import user from "../../utils/userData";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 
 type iLinks = Record<"linkedin" | "github" | "whatsapp" | "curriculum", string>;
 
@@ -30,13 +31,30 @@ const MenuSocial = () => {
       )}
       <div>
         {user.linkedin && (
-          <StyledIconButton href={links.linkedin} target="_blank">
+          <StyledIconButton
+            href={links.linkedin}
+            target="_blank"
+            title="Acesse meu linkedin"
+          >
             <LinkedInIcon />
           </StyledIconButton>
         )}
         {user.github && (
-          <StyledIconButton href={links.whatsapp} target="_blank">
+          <StyledIconButton
+            href={links.github}
+            target="_blank"
+            title="Acesse meu github"
+          >
             <GitHubIcon />
+          </StyledIconButton>
+        )}
+        {user.email && (
+          <StyledIconButton
+            href={`mailto:${user.email}`}
+            target="_blank"
+            title="me mande um email"
+          >
+            <EmailIcon />
           </StyledIconButton>
         )}
       </div>
