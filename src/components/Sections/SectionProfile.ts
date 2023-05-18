@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import backgroundImg from "../../assets/backgroundCode.png";
+import backgroundImg from "../../assets/backgroundCode.png";
 
 const SectionProfile = styled.section`
   background-color: var(--color-primary-100);
@@ -16,7 +16,7 @@ const SectionProfile = styled.section`
     opacity: 0.2;
     filter: blur(1.5px);
 
-    background-image: url("src/assets/backgroundCode.png");
+    background-image: url(${backgroundImg});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
