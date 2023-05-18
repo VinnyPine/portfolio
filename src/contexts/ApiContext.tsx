@@ -2,6 +2,7 @@ import { createContext } from "react";
 import { useState, useEffect } from "react";
 import api from "../services/api";
 import projectsData from "../utils/projectsData";
+import userData from "../utils/userData";
 
 interface iApiValue {
   user: iUser | undefined;
@@ -36,13 +37,13 @@ const ApiProvider = ({ children }: iApiProps) => {
   const [showButton, setShowButton] = useState(false);
 
   const requestUser = async () => {
-    const response = await api.get("/users/VinnyPine");
+    const response = await api.get(`/users/${userData.github}`);
 
     setUser(response.data);
   };
 
   const requestRepos = async () => {
-    const response = await api.get("/users/VinnyPine/repos");
+    const response = await api.get(`/users/${userData.github}/repos`);
 
     const reposResponse: Array<iRepoData> = response.data;
 
