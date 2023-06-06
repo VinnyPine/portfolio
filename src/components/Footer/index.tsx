@@ -8,8 +8,6 @@ import { motion } from "framer-motion";
 const Footer = () => {
   const { showButton } = useContext(ApiContext);
 
-  console.log(showButton);
-
   return (
     <StyledFooter showButton={showButton}>
       <span className="text-footer gray-700"> Vinicius • 2023</span>
