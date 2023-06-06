@@ -11,6 +11,7 @@ const StyledProjects = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding-bottom: 30px;
+  flex-wrap: wrap;
 
   > div {
     display: flex;
@@ -20,6 +21,7 @@ const StyledProjects = styled.div`
     background-color: var(--color-white);
     padding: 15px;
     border-radius: 10px;
+    width: 100%;
 
     > img {
       width: 100%;
@@ -47,6 +49,7 @@ const StyledProjects = styled.div`
 
     > div {
       padding: 12px;
+      width: clamp(200px, 50%, 400px);
     }
   }
 `;
