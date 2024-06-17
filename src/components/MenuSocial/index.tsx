@@ -14,7 +14,7 @@ const MenuSocial = () => {
     github: `https://www.github.com/${user?.github}/`,
     whatsapp: `https://api.whatsapp.com/send?phone=+55${user?.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`,
     curriculum:
-      "https://drive.google.com/file/d/1RQa6fshHqgB4OpTcoXZ7Wyv-bF9Ag92J/view?usp=sharing",
+      "https://drive.google.com/file/d/1dqEA5PKZm6F1nVYZQyQWFVaieWp9aKMU/view?usp=drive_link",
   };
 
   return (
@@ -61,7 +61,7 @@ const MenuSocial = () => {
       <StyledButton
         href={links.curriculum}
         target="_blank"
-        variant="outlined"
+        variant="text"
         startIcon={<DescriptionOutlinedIcon />}
       >
         Curriculo

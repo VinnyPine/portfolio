@@ -18,9 +18,16 @@ import {
   SiGit,
   SiGithub,
   SiFramer,
+  SiApachekafka,
+  SiMongodb,
+  SiMongoose,
+  SiGraphql,
+  SiApollographql,
+  SiRedux,
+  SiRadixui
 } from "react-icons/si";
 import { GrReactjs } from "react-icons/gr";
-import { FaNodeJs } from "react-icons/fa";
+import { FaNodeJs, FaAngular } from "react-icons/fa";
 
 export const stackData = [
   {
@@ -35,12 +42,18 @@ export const stackData = [
     title: "JavaScript",
     img: IoLogoJavascript,
   },
-
   {
-    title: "ReactJs",
+    title: "React",
     img: GrReactjs,
   },
-
+  {
+    title: "Redux",
+    img: SiRedux,
+  },
+  {
+    title: "AngularJS",
+    img: FaAngular,
+  },
   {
     title: "TypeScript",
     img: SiTypescript,
@@ -60,6 +73,10 @@ export const stackData = [
   {
     title: "Material UI",
     img: SiMui,
+  },
+  {
+    title: "Radix UI",
+    img: SiRadixui,
   },
   {
     title: "Styled Components",
@@ -84,6 +101,26 @@ export const stackData = [
   {
     title: "Django",
     img: SiDjango,
+  },
+  {
+    title: "Apache Kafka",
+    img: SiApachekafka,
+  },
+  {
+    title: "GraphQl",
+    img: SiGraphql,
+  },
+  {
+    title: "Apollo GraphQL",
+    img: SiApollographql,
+  },
+  {
+    title: "Mongoose",
+    img: SiMongoose,
+  },
+  {
+    title: "MongoDB",
+    img: SiMongodb,
   },
   {
     title: "Postgresql",
