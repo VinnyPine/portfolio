@@ -22,8 +22,8 @@ const StyledMenu = styled.div`
       gap: 50px;
     }
 
-    @media (min-width: 1800px) {
-      scale: 1.8;
+    @media (min-width: 2000px) {
+      scale: 1.4;
     }
   }
 `;

@@ -9,7 +9,6 @@ const StyledSocialMenu = styled.div`
   gap: 10px;
   align-items: center;
   margin-top: 20px;
-  height: 20%;
 
   div > a > svg {
     font-size: 32px;

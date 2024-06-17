@@ -2,15 +2,19 @@ import StyledFooter from "./style";
 import { TfiArrowCircleUp } from "react-icons/tfi";
 import { IconButton } from "@mui/material";
 import { ApiContext } from "../../contexts/ApiContext";
-import { useContext } from "react";
+import { ReactNode, useContext } from "react";
 import { motion } from "framer-motion";
 
-const Footer = () => {
+interface iProps {
+  children: string | ReactNode;
+}
+
+const Footer = ({ children }: iProps) => {
   const { showButton } = useContext(ApiContext);
 
   return (
     <StyledFooter showButton={showButton}>
-      <span className="text-footer gray-700"> Vinicius • 2023</span>
+      <span className="text-footer gray-700">{children}</span>
       {showButton && (
         <motion.div
           className="btBackToTop"
