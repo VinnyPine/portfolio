@@ -106,7 +106,7 @@ function App() {
           <Projects />
         </Container>
       </SectionProjects>
-      <Footer />
+      <Footer>Vinicius • 2024</Footer>
     </div>
   );
 }

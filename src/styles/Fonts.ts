@@ -1,8 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
 const Fonts = createGlobalStyle`
-  height: 50%;
-
   .title-profile {
     font-size: var(--font-size-title-profile);
     font-weight: bold;
@@ -52,7 +50,6 @@ const Fonts = createGlobalStyle`
   .gray-700 {
     color: var(--color-gray-700);
   }
-
 `;
 
 export default Fonts;
