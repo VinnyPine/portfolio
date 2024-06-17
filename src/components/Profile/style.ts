@@ -39,7 +39,7 @@ const StyledProfile = styled.div`
   }
 
   @media (min-width: 2000px) {
-    scale: 2;
+    scale: 1.6;
   }
 `;
 
