@@ -15,6 +15,7 @@ const userData = {
   githubUsername: "seu-username-do-github",
   linkedin: "seu-linkedin",
   phone: "(XX) XXXXX-XXXX",
+  curriculum: "https://curriculum.link"
 };
 ```
 
