@@ -6,15 +6,13 @@ import user from "../../utils/userData";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import EmailIcon from "@mui/icons-material/Email";
 
-type iLinks = Record<"linkedin" | "github" | "whatsapp" | "curriculum", string>;
+type iLinks = Record<"linkedin" | "github" | "whatsapp", string>;
 
 const MenuSocial = () => {
   const links: iLinks = {
     linkedin: `https://www.linkedin.com/in/${user?.linkedin}/`,
     github: `https://www.github.com/${user?.github}/`,
-    whatsapp: `https://api.whatsapp.com/send?phone=+55${user?.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`,
-    curriculum:
-      "https://drive.google.com/file/d/1dqEA5PKZm6F1nVYZQyQWFVaieWp9aKMU/view?usp=drive_link",
+    whatsapp: `https://api.whatsapp.com/send?phone=+55${user?.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`
   };
 
   return (
@@ -59,7 +57,7 @@ const MenuSocial = () => {
         )}
       </div>
       <StyledButton
-        href={links.curriculum}
+        href={user.curriculum}
         target="_blank"
         variant="text"
         startIcon={<DescriptionOutlinedIcon />}
