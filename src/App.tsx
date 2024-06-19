@@ -51,11 +51,16 @@ function App() {
             variants={showRightVariant}
             viewport={{ once: true }}
           >
-            Sou um desenvolvedor web com competências em criar páginas
-            semânticas e responsivas, aplicações de página única (SPA), e APIs
-            Rest usando Node JS e Python. Também tenho conhecimento de
-            metodologias ágeis como scrum e kanban, e um nível intermediário de
-            inglês.
+            Sou um desenvolvedor com competências em criar páginas web semânticas e adaptáveis a diferentes dispositivos, bem como no desenvolvimento de aplicações de página única (SPA) e na implementação de APIs Rest utilizando Node.js e Python. Em experiências profissionais passadas, desenvolvi desde páginas de relatórios intuitivas, que permitem aos usuários visualizar dados essenciais, facilitando a tomada de decisões a sistemas de autenticação com Single Sign-On (SSO), proporcionando uma experiência de usuário contínua e segura.
+          </motion.p>
+          <motion.p
+            className="text-section"
+            initial="deappear"
+            whileInView="appear"
+            variants={showRightVariant}
+            viewport={{ once: true }}
+          >
+            Minha experiência com metodologias ágeis, como Scrum e Kanban, complementa minha capacidade técnica, permitindo-me trabalhar de forma eficiente e colaborativa em ambientes dinâmicos. Também possuo proficiência em inglês em nível intermediário, o que me permite colaborar em projetos multiculturais e diversificados.
           </motion.p>
           <motion.p
             className="text-section"
