@@ -51,7 +51,7 @@ function App() {
             variants={showRightVariant}
             viewport={{ once: true }}
           >
-            Sou um desenvolvedor com competências em criar páginas web semânticas e adaptáveis a diferentes dispositivos, bem como no desenvolvimento de aplicações de página única (SPA) e na implementação de APIs Rest utilizando Node.js e Python. Em experiências profissionais passadas, desenvolvi desde páginas de relatórios intuitivas, que permitem aos usuários visualizar dados essenciais, facilitando a tomada de decisões a sistemas de autenticação com Single Sign-On (SSO), proporcionando uma experiência de usuário contínua e segura.
+            Sou um desenvolvedor com competências em criar páginas web semânticas e adaptáveis a diferentes dispositivos, bem como no desenvolvimento de aplicações de página única (SPA), Landing Pages (LP) e na implementação de APIs Rest, WebSocket e GraphQL. Em experiências profissionais passadas, desenvolvi desde páginas de relatórios intuitivas, que permitem aos usuários visualizar dados essenciais, facilitando a tomada de decisões a sistemas de autenticação com Single Sign-On (SSO), proporcionando uma experiência de usuário contínua e segura.
           </motion.p>
           <motion.p
             className="text-section"
