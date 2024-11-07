@@ -4,7 +4,7 @@ const userData = {
   linkedin: "viniciuspinheirodasilva",
   whatsappNumber: "11933818109",
   email: "viniciusps_1998@hotmail.com",
-  curriculum: "https://drive.google.com/file/d/1dqEA5PKZm6F1nVYZQyQWFVaieWp9aKMU/view?usp=drive_link"
+  curriculum: "https://drive.google.com/file/d/14C5VgG7lxQ2Dd9xG12Im3eXy_OR8hfJk/view?usp=sharing"
 };
 
 export default userData;
