@@ -51,7 +51,8 @@ export const StyledToggleButtonGroup = styledMui(ToggleButtonGroup)<ToggleButton
       backgroundColor: "#0000003b"
     },
     "&.Mui-selected": {
-      backgroundColor: "#00000048"
+      backgroundColor: "#00000048",
+      color: "var(--color-white)"
     },
   },
   "@media (min-width: 600px)": {
