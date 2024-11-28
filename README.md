@@ -14,9 +14,9 @@ const userData = {
   name: "Seu nome aqui",
   github: "seu-nome-de-usuário-do-github",
   linkedin: "seu-linkedin",
-  whatsappNumber: "11912341234"
+  whatsappNumber: "11912341234",
   email: "exemplo@email.com",
-  curriculum: "https://linkdo.curriculo"
+  curriculum: "https://linkdo.curriculo",
 };
 ```
 
