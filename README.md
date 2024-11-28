@@ -12,28 +12,32 @@ Dentro dessa pasta, você precisará fazer o seguinte:
 ```javascript
 const userData = {
   name: "Seu nome aqui",
-  githubUsername: "seu-username-do-github",
+  github: "seu-nome-de-usuário-do-github",
   linkedin: "seu-linkedin",
-  phone: "(XX) XXXXX-XXXX",
-  curriculum: "https://curriculum.link"
+  whatsappNumber: "11912341234"
+  email: "exemplo@email.com",
+  curriculum: "https://linkdo.curriculo"
 };
 ```
 
-- Em stackData, coloque o título da ferramenta e o ícone do pacote react-icons.
+- Em stackData, coloque o título da ferramenta, ícone do pacote react-icons e uma ou mais tags para o filtro.
 
 ```javascript
 const stackData = [
   {
-    title: "ReactJS",
-    icon: "FaReact",
+    title: "React",
+    icon: "GrReactjs",
+    tag: ["frontend"],
   },
   {
-    title: "Node.js",
-    icon: "FaNodeJs",
+    title: "NodeJs",
+    img: FaNodeJs,
+    tags: ["backend"],
   },
   {
-    title: "JavaScript",
-    icon: "FaJs",
+    title: "TypeScript",
+    img: SiTypescript,
+    tags: ["frontend", "backend", "mobile"],
   },
 ];
 ```
